@@ -12,6 +12,7 @@ RUN apt update -y && apt install --no-install-recommends -y \
     software-properties-common \
     ca-certificates \
     openssl \
+    gnupg \
     && rm -rf /var/lib/apt/lists/*
 
 RUN add-apt-repository ppa:mozillateam/ppa -y
